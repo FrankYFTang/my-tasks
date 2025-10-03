@@ -10,7 +10,7 @@
         max="2100-12-31T00:00:00"
         :locale="tr._code"
         hour-cycle="h23"
-        :firstDayOfWeek="new Intl.Locale(tr._code).weekInfo.firstDay ?? 1"
+        :firstDayOfWeek="new Intl.Locale(tr._code).getWeekInfo().firstDay ?? 1"
       />
     </IonModal>
   </IonDatetimeButton>
